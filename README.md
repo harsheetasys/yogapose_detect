@@ -5,7 +5,7 @@ The Yoga Pose Detection project classifies yoga poses from images into predefine
 # Project Workflow
 The project follows a structured methodology, from data preparation to deployment.
 
-# 1. Data Collection
+ 1. Data Collection
 Images of various yoga poses were collected from publicly available datasets and manually curated to include the following classes:
 Warrior II
 Tree Pose
@@ -13,7 +13,7 @@ Downward Dog
 Goddess Pose
 Plank Pose
 
-# 2. Data Preprocessing
+2. Data Preprocessing
 To ensure consistency and improve model performance, several preprocessing steps were applied:
 Image Resizing: Resized all images to 224x224 pixels to match the CNN input requirements.
 Normalization: Scaled pixel values to the range [0, 1].
@@ -22,7 +22,7 @@ Random rotations
 Horizontal and vertical flips
 Zoom and brightness adjustments
 
-# 3. Model Architecture
+ 3. Model Architecture
 A custom CNN was designed for this project, optimized for multi-class image classification tasks.
 Model Highlights:
 Input Layer: Accepts images of size 224x224x3.
@@ -31,14 +31,14 @@ Batch Normalization: Stabilizes training by normalizing intermediate layers.
 Pooling Layers: Reduces spatial dimensions to improve computational efficiency.
 Fully Connected Layers: Combines features for classification.
 
-# Output Layer:
+Output Layer:
 Contains five neurons (one for each pose).
 Utilizes the softmax activation function for multi-class predictions.
 Training Parameters:
 Loss Function: Categorical Crossentropy
 Optimizer: Adam optimizer for faster convergence
 
-# 4. Web Application
+#4. Web Application
 An interactive web interface was developed for seamless user experience.
 Backend: Flask handles image uploads and runs the prediction pipeline.
 Frontend: Provides a clean and responsive UI for:
@@ -46,11 +46,11 @@ Uploading images
 Displaying classification results dynamically
 Integration: The trained CNN model is integrated into the Flask app for real-time inference.
 
-# Results
+ Results
 The model demonstrates robust performance:
-# Training Accuracy: ~96%
-# Validation Accuracy: ~92%
-# Test Accuracy: ~90% on unseen data
+ Training Accuracy: ~96%
+ Validation Accuracy: ~92%
+ Test Accuracy: ~90% on unseen data
 
 # Acknowledgments
 Inspiration: This project draws inspiration from fitness apps and advancements in computer vision.
